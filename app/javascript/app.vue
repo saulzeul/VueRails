@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <p>{{ message }}</p>
+    <p class="comentario">{{ message }}</p>
   </div>
 </template>
 
@@ -8,14 +8,15 @@
 export default {
   data: function () {
     return {
-      message: "Hello Vue!"
+      message: "Hola mundo desde VUE JS"
     }
   }
 }
 </script>
 
-<style scoped>
-p {
+<style lang="css" scoped>
+.comentario {
+  font-family: helvetica;
   font-size: 2em;
   text-align: center;
 }
