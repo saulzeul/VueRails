@@ -23,4 +23,12 @@ Things you may want to cover:
 
 * Vue with Webpacker
 
-* ...
+* How to run Rails, Vue, Webpack and ExpressJS
+
+* Install ruby and rails
+
+* Install Yarn
+
+* In the console run bundle install, yarn install, npm install
+
+* Run server, rails s and ruby ./bin/webpack-dev-server
