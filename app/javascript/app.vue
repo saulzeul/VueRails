@@ -8,7 +8,7 @@
 export default {
   data: function () {
     return {
-      message: "Hola mundo desde VUE JS"
+      message: "Hola mundo Saul"
     }
   }
 }

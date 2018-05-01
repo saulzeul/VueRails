@@ -5,9 +5,13 @@
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 import TurbolinksAdapter from 'vue-turbolinks';
+import BootstrapVue from 'bootstrap-vue';
 import Vue from 'vue/dist/vue.esm'
 import App from '../app.vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.use(TurbolinksAdapter)
+Vue.use(BootstrapVue);
 
 document.addEventListener('turbolinks:load', () => {
   const app = new Vue({
