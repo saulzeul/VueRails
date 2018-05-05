@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <p class="comentario">{{ message }}</p>
+    <h1 class="comentario">{{ message }}</h1>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   data: function () {
     return {
-      message: "Hola mundo desde VUE JS"
+      message: "Hola Saul Emmanuel Espinoza Lopez"
     }
   }
 }
