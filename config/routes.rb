@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   get 'panel/panel'
 
   get 'login/login'
-  get 'login/forgot'
 
   root to: 'login#login'
 
