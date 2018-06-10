@@ -1,33 +1,26 @@
-<ul class="nav justify-content-end">
-  <li class="nav-item">
-    <button type="button" href="panel/panel" class="btn btn-light">About us</button>
-  </li>
-</ul>
-<div class="container">
-  <div class="row justify-content-md-center">
-    <div class="col-md-auto col-sm-auto">
-      <%= image_tag("public/logo.jpg", style: "width:150px;")%>
-    </div>
-  </div>
-  <div class="row justify-content-md-center">
-    <div class="col-md-4 col-sm-auto">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Login</h5>
-          <%= form_tag("panel/panel", method: "post") do %>
-            <div class="form-group">
-              <%= label_tag(:inputID, "Username:") %>
-              <%= text_field(:inputID, :inputID,  class: 'form-control') %>
-              <%= label_tag(:inputID, "Password:") %>
-              <%= text_field(:inputPass, :inputPass,  class: 'form-control', type: 'password') %>
-              <small id="emailHelp" class="form-text text-muted">Forgot your password?</small>
-            </div>
-            <div class="form-group">
-              <%= button_tag(:'Sign in', class:'form-control btn btn-success') %>
-            </div>
-          <% end %>
+<nav class="navbar navbar-light bg-light justify-content-center">
+  <div class="logo"></div>
+</nav>
+<div class="container" style="margin-top:20px;">
+  <div class="row justify-content-center">
+    <div class="card">
+      <div class="card-body ">
+        <div class="imgEmpresa mx-auto"></div>
+        <h3 class="card-title text-center">Iniciar sesion</h3>
+          <div class="form-group">
+            <label for="">ID</label>
+            <input type="text" class="form-control form-control-sm">
+          </div>
+          <div class="form-group">
+            <label for="">Contraseña</label>
+            <input type="password" class="form-control form-control-sm">
+            <a href="#" class="form-text text-muted" style="text-decoration:none;">¿olvidaste tu contraseña?</a>
+          </div>
+          <a href="panel/panel" class="btn btn-success btn-block">Iniciar sesion</a>
         </div>
-      </div>
     </div>
   </div>
 </div>
+<nav class="navbar navbar-light bg-light fixed-bottom justify-content-center">
+  <a class="nav-link">Copyright © 2018 MyJournal. Todos los derechos reservados.</a>
+</nav>
